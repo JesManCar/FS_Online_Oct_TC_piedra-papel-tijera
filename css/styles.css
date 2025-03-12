@@ -1,7 +1,10 @@
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 .boton-jugada {
   background-color: #3498db;
@@ -13,4 +16,71 @@ body {
 #resultados {
   font-size: 20px;
   margin: 20px 0;
+}
+
+/*Nuestro CSS*/
+
+body {
+  color: navy;
+  background-color: #dad5d5;
+}
+
+.header-top {
+  background-color:#aeadad;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  text-transform: capitalize;
+  box-shadow: black 0px 0px 10px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+.partida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.boton-jugada{
+  background-color: lightblue;
+  color: navy;
+  font-size: 34px;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid navy;
+  transition: all .5s linear;
+}
+
+.boton-jugada:hover{
+  background-color: rgb(197, 235, 248);
+  box-shadow: 10px 10px 0 0 gray;
+}
+
+.resultados{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 24px;
+  margin-top: 80px;
+}
+
+.historial{
+  list-style: none;
+  font-size: 32px;
+  padding: 0;
+  max-height: 390px;
+  overflow: hidden;
 }

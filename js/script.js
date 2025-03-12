@@ -23,11 +23,17 @@ arrayBtns.forEach(element => {
         else if((player===0 && ia===2) || (player===2 && ia===1) || (player===1 && ia===0)){
             console.log("Gana PLAYER");
             puntPlayer++;
-            contPlayerHTML.textContent = `Tus puntos: ${puntPlayer}`;
+            contPlayerHTML.textContent = `🏆Tus puntos: ${puntPlayer}`;
         } else {
             console.log("GANA IA");
             puntIA++;
-            contIAHTML.textContent = `Puntos de la máquina: ${puntIA}`;
+            contIAHTML.textContent = `🤖Puntos de la máquina: ${puntIA}`;
         }
+        const historial = document.getElementById("historial");
+        let result = player === 0 ? "✌️" : (player === 1 ? "👊" : "🖐️");
+        result +=" - ";
+        result += ia === 0 ? "✌️" : (ia === 1 ? "👊" : "🖐️");
+        historial.insertAdjacentHTML("afterbegin", `<li>${result}</li>`)
     });
 });
+
